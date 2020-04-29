@@ -13,7 +13,7 @@ package controllers_test
 import (
 	"github.com/revel/examples/booking/app/tmp/run"
 	"testing"
-	"github.com/revel/modules/server-engine/gohttptest/testsuite"
+	"github.com/tamurayoshiya/modules/server-engine/gohttptest/testsuite"
 )
 func TestMain(m *testing.M) {
 	testsuite.RevelTestHelper(m, "dev",run.Run)

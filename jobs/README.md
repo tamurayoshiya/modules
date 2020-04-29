@@ -6,17 +6,17 @@ github:
     - topic-runtime
 ---
 
-The [`Jobs`](https://godoc.org/github.com/revel/modules/jobs/app/jobs) framework for performing work asynchronously, outside of the
+The [`Jobs`](https://godoc.org/github.com/tamurayoshiya/modules/jobs/app/jobs) framework for performing work asynchronously, outside of the
 request flow.  This may take the form of [recurring tasks](#jobs) that updates cached data
 or [one-off tasks](#OneOff) such as sending emails.
 
 ## Activation
 
-The [`Jobs`](https://godoc.org/github.com/revel/modules/jobs/app/jobs) framework is included as an optional [module](index.html), and is not enabled by default.
+The [`Jobs`](https://godoc.org/github.com/tamurayoshiya/modules/jobs/app/jobs) framework is included as an optional [module](index.html), and is not enabled by default.
 To activate it, add `module.jobs` to the [app.conf](../manual/appconf.html) file:
 
 ```ini
-module.jobs = github.com/revel/modules/jobs
+module.jobs = github.com/tamurayoshiya/modules/jobs
 ```
 
 Additionally, in order to access the job monitoring page, you will need to add
@@ -37,7 +37,7 @@ to place on the jobs that it runs. These are listed below with their default val
 ## Implementing Jobs
 
 To create a Job, implement the [`cron.Job`](https://github.com/robfig/cron/) interface.  The
-[`Job`](https://godoc.org/github.com/revel/modules/jobs/app/jobs#Job) interface has the following signature:
+[`Job`](https://godoc.org/github.com/tamurayoshiya/modules/jobs/app/jobs#Job) interface has the following signature:
 
 {% highlight go %}
 // https://github.com/robfig/cron/blob/master/cron.go
@@ -93,7 +93,7 @@ Here are some examples:
 {% highlight go %}
 import (
     "github.com/revel/revel"
-    "github.com/revel/modules/jobs/app/jobs"
+    "github.com/tamurayoshiya/modules/jobs/app/jobs"
     "time"
 )
 
@@ -169,7 +169,7 @@ func (c AppController) Action() revel.Result {
 
 ## Registering functions
 
-It is possible to register a `func()` as a job by wrapping it in the [`jobs.Func`](https://godoc.org/github.com/revel/modules/jobs/app/jobs#Func)
+It is possible to register a `func()` as a job by wrapping it in the [`jobs.Func`](https://godoc.org/github.com/tamurayoshiya/modules/jobs/app/jobs#Func)
 type.  For example:
 
 {% highlight go %}

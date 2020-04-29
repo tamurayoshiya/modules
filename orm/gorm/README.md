@@ -5,7 +5,7 @@ modules/gorm
 
 ## Activation
 ```ini
-module.gorm = github.com/revel/modules/orm/gorm
+module.gorm = github.com/tamurayoshiya/modules/orm/gorm
 ```
 
 ## Drivers
@@ -44,7 +44,7 @@ package controllers
 
 import (
     "github.com/revel/revel"
-    gormc "github.com/revel/modules/orm/gorm/app/controllers"
+    gormc "github.com/tamurayoshiya/modules/orm/gorm/app/controllers"
 )
 
 type App struct {
@@ -70,7 +70,7 @@ package controllers
 
 import (
     "github.com/revel/revel"
-    gormc "github.com/revel/modules/orm/gorm/app/controllers"
+    gormc "github.com/tamurayoshiya/modules/orm/gorm/app/controllers"
 )
 
 type App struct {

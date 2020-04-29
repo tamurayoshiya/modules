@@ -10,7 +10,7 @@ composable parts*
 
 ## Activation
 ```ini
-module.gorp = github.com/revel/modules/orm/gorp
+module.gorp = github.com/tamurayoshiya/modules/orm/gorp
 ```
 
 ## Drivers
@@ -38,7 +38,7 @@ db.connection=localhost port=8500 user=user dbname=mydb sslmode=disable password
 db.autoinit=true 
 ```
 ## Decelerations
-A global `Db *DbGorp` object is created in `github.com/revel/modules/gorp/app`.
+A global `Db *DbGorp` object is created in `github.com/tamurayoshiya/modules/gorp/app`.
 The `Db` is initialized from the app.conf if `db.autoinit=true`.
  ```go
 // DB Gorp
@@ -60,7 +60,7 @@ Note that the tables are added as a function using `gorp.Db.SetDbInit` - this is
 ```go
 import (
 	"github.com/revel/revel"
-	"github.com/revel/modules/gorp/app"
+	"github.com/tamurayoshiya/modules/gorp/app"
 )
 func init() {
 	revel.OnAppStart(func(){
@@ -83,7 +83,7 @@ package controllers
 
 import (
 	"github.com/revel/revel"
-	"github.com/revel/modules/orm/gorp/app/controllers"
+	"github.com/tamurayoshiya/modules/orm/gorp/app/controllers"
 )
 
 type App struct {
@@ -108,7 +108,7 @@ to use the global database (in the gorp module) you can initialize another anywh
  ```go
 import (
 	"github.com/revel/revel"
-	"github.com/revel/modules/orm/gorp/app"
+	"github.com/tamurayoshiya/modules/orm/gorp/app"
 )
 var (
 SecondDb = &gorp.DbGorp{} 
@@ -138,7 +138,7 @@ can properly initialize the newly thread created GORP instances. Here is an exam
 ```go
 import (
 	"github.com/revel/revel"
-	"github.com/revel/modules/gorp/app"
+	"github.com/tamurayoshiya/modules/gorp/app"
 )
 func init() {
 	revel.OnAppStart(func(){
