@@ -1,29 +1,29 @@
 
 For serving directories of static assets, Revel provides the **static** built in module,
 which contains a single
-[Static](https://godoc.org/github.com/revel/modules/static/app/controllers#Static)
+[Static](https://godoc.org/github.com/tamurayoshiya/modules/static/app/controllers#Static)
 controller.  
 
-[Static.Serve](https://godoc.org/github.com/revel/modules/static/app/controllers#Static.Serve) action takes two parameters:
+[Static.Serve](https://godoc.org/github.com/tamurayoshiya/modules/static/app/controllers#Static.Serve) action takes two parameters:
  `(file path relative to app)`, `(exact file name)`
 
-[Static.ServeModule](https://godoc.org/github.com/revel/modules/static/app/controllers#Static.ServeModule) action takes three parameters:
+[Static.ServeModule](https://godoc.org/github.com/tamurayoshiya/modules/static/app/controllers#Static.ServeModule) action takes three parameters:
 `(module name)`, `(file path relative to app)`, `(exact file name)`
 
-[Static.ServeDir](https://godoc.org/github.com/revel/modules/static/app/controllers#Static.ServeDir) action takes one parameter:
+[Static.ServeDir](https://godoc.org/github.com/tamurayoshiya/modules/static/app/controllers#Static.ServeDir) action takes one parameter:
 `(file path relative to app)`
 
 
 ## Config
 
-The [`static`](https://godoc.org/github.com/revel/modules/static/app/controllers) module
+The [`static`](https://godoc.org/github.com/tamurayoshiya/modules/static/app/controllers) module
 is optional **is** enabled by default. 
 
 By default when you create a new project the following
 configuration options are set in the file:
 
 ```ini
-module.static = github.com/revel/modules/static
+module.static = github.com/tamurayoshiya/modules/static
 ```
 
 Additionally, these will be set in routes `conf/routes`:

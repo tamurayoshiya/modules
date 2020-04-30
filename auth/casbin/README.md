@@ -14,7 +14,7 @@ import (
 
 	"github.com/casbin/casbin"
 	"github.com/revel/revel"
-	"github.com/revel/modules/auth/casbin"
+	"github.com/tamurayoshiya/modules/auth/casbin"
 )
 
 var adapter = casbinauth.NewAdapter(params)
