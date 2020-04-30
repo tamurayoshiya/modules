@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/newrelic/go-agent"
-	"github.com/revel/modules/server-engine/newrelic"
+	"github.com/tamurayoshiya/modules/server-engine/newrelic"
 	"github.com/revel/revel"
 )
 

@@ -2,13 +2,13 @@ package gorpController
 
 import (
 	"database/sql"
-	"github.com/revel/modules/orm/gorp/app"
+	"github.com/tamurayoshiya/modules/orm/gorp/app"
 	"github.com/revel/revel"
 )
 
 // Controller definition for database transaction
 // This controller is only useful if you intend to use the database instance
-// defined in github.com/revel/modules/orm/gorp/app.Db
+// defined in github.com/tamurayoshiya/modules/orm/gorp/app.Db
 type Controller struct {
 	*revel.Controller
 	Txn *gorp.Transaction

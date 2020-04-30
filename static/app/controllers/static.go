@@ -11,7 +11,7 @@ import (
 	"syscall"
 
 	"fmt"
-	"github.com/revel/modules/static/app/model"
+	"github.com/tamurayoshiya/modules/static/app/model"
 	"github.com/revel/revel"
 	"io/ioutil"
 	"net/http"

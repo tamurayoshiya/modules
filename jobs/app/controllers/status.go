@@ -6,7 +6,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"github.com/revel/cron"
-	"github.com/revel/modules/jobs/app/jobs"
+	"github.com/tamurayoshiya/modules/jobs/app/jobs"
 	"github.com/revel/revel"
 	"net/http"
 	"strings"

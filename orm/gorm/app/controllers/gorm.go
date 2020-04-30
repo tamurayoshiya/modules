@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/jinzhu/gorm"
-	gormdb "github.com/revel/modules/orm/gorm/app"
+	gormdb "github.com/tamurayoshiya/modules/orm/gorm/app"
 	"github.com/revel/revel"
 )
 

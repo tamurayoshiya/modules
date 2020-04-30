@@ -19,7 +19,7 @@ func RevelTestHelper(m *testing.M, mode string, runner func(port int)) {
 	revel.AddInitEventHandler(func(event revel.Event, value interface{}) (returnType revel.EventResponse) {
 		if event == revel.REVEL_BEFORE_MODULES_LOADED {
 			revel.Config.SetOption("server.engine", "go-test")
-			revel.Config.SetOption("module.go-test", "github.com/revel/modules/server-engine/gohttptest")
+			revel.Config.SetOption("module.go-test", "github.com/tamurayoshiya/modules/server-engine/gohttptest")
 
 		} else if event == revel.ENGINE_STARTED {
 			go func() {
